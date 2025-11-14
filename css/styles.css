@@ -1,0 +1,10 @@
+
+body{background:#05060a;color:#f7f3ec;font-family:sans-serif;margin:0}
+.container{max-width:960px;margin:auto;padding:1.5rem}
+.site-header{background:radial-gradient(circle at top,#3b2b1a,#05060a);padding:1.2rem}
+.album-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
+.album-card{background:rgba(15,12,9,0.8);padding:1rem;border-radius:1rem;border:1px solid rgba(255,215,160,0.25);text-align:center}
+.album-card img{width:100%;border-radius:0.8rem;margin-bottom:.7rem}
+.gallery-img,.portrait-img{width:100%;border-radius:1rem;border:1px solid rgba(255,215,160,0.18);margin-top:1rem}
+.track{margin-top:1.2rem;background:rgba(15,12,9,0.9);padding:1rem;border-radius:.8rem}
+audio{width:100%}
