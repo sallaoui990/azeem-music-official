@@ -148,4 +148,24 @@
 </section>
 
 </main>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const elements = document.querySelectorAll('.fade-in');
+
+  function checkFade() {
+    const triggerBottom = window.innerHeight * 0.9;
+
+    elements.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+
+      if (top < triggerBottom) {
+        el.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', checkFade);
+  checkFade();
+});
+</script>
 </body></html>
