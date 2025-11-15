@@ -111,11 +111,12 @@ body::before {
 /* Fix for large portrait + studio images */
 .gallery-img,
 .portrait-img {
-  max-width: 600px;       /* Set a nice maximum size */
-  width: 100%;            /* Responsive scaling */
-  height: auto;           /* Prevent stretching */
+  width: 100%;
+  max-width: 450px;     /* ↓ smaller max width */
+  max-height: 350px;    /* ↓ NEW: keeps it from being too tall */
+  height: auto;
+  object-fit: cover;    /* clean crop to maintain good look */
   display: block;
-  margin: 0 auto;         /* Center the images */
-  border-radius: 10px;    /* Optional: smooth look */
-  object-fit: cover;      /* Keeps image looking clean */
+  margin: 0 auto;
+  border-radius: 10px;
 }
