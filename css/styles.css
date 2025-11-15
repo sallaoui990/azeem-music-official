@@ -1,5 +1,10 @@
+body {
+  background: radial-gradient(circle at top, #b68a4a 0%, #3e2f1d 40%, #1a140c 100%);
+  color: #fff7e6;
+  font-family: sans-serif;
+  margin: 0;
+}
 
-body{background:#05060a;color:#f7f3ec;font-family:sans-serif;margin:0}
 .container{max-width:960px;margin:auto;padding:1.5rem}
 .site-header{background:radial-gradient(circle at top,#3b2b1a,#05060a);padding:1.2rem}
 .album-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
@@ -25,7 +30,7 @@ audio{width:100%}
   opacity: 0.85;
   margin-top: .5rem;
 }
-/* === Fade-in Animations === */
+
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -36,3 +41,4 @@ audio{width:100%}
   opacity: 1;
   transform: translateY(0);
 }
+
