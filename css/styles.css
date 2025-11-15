@@ -1,3 +1,4 @@
+
 body {
   background: radial-gradient(circle at top, #b68a4a 0%, #3e2f1d 40%, #1a140c 100%);
   color: #fff7e6;
@@ -6,8 +7,11 @@ body {
 }
 
 .container{max-width:960px;margin:auto;padding:1.5rem}
-.site-header{background: radial-gradient(circle at top, #c89b5a, #3e2f1d);
-padding:1.2rem}
+.site-header {
+  background: radial-gradient(circle at top, #c89b5a, #3e2f1d);
+  padding: 1.2rem;
+  margin-top: 70px;
+}
 .album-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
 .album-card{background:rgba(15,12,9,0.8);padding:1rem;border-radius:1rem;border:1px solid rgba(255,215,160,0.25);text-align:center}
 .album-card img{width:100%;border-radius:0.8rem;margin-bottom:.7rem}
@@ -90,4 +94,17 @@ body::before {
     rgba(0, 0, 0, 0.35) 100%
   );
   z-index: -1;
+}
+.section-divider {
+  width: 80%;
+  margin: 2.5rem auto;
+  height: 2px;
+  background: linear-gradient(to right,
+    rgba(255, 215, 160, 0),
+    rgba(255, 215, 160, 0.7),
+    rgba(255, 215, 160, 0)
+  );
+  border: none;
+  display: block;
+  box-shadow: 0 0 8px rgba(255, 215, 160, 0.4);
 }
